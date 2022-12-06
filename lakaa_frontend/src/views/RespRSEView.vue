@@ -39,7 +39,6 @@ export default defineComponent({
   data() {
     return {
       collects: [] as Collect[],
-      fetchingFacts: false
     }
   },
   methods: {

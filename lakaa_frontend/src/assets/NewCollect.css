@@ -1,0 +1,55 @@
+.popup{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-inner{
+    background-color: #1A3E38;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    height: 80%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input-labels{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    text-align: right;
+    max-width: 50%;
+}
+
+.input-boxes{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: left;
+}
+
+.error-msg{
+    color: rgb(185, 81, 81);
+    text-align: center;
+}
+
+.row-flex{
+    display: flex;
+    gap: 20px;
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NewCollect from "@/components/icons/NewCollect.vue";
+import NewCollect from "@/components/NewCollect.vue"
 import "../assets/MagasinView.css"
 </script>
 
@@ -9,8 +9,30 @@ import "../assets/MagasinView.css"
       <img class="img-food" src="../assets/images/foodPackage.jpg">
       <div class="description">
         <h2>Collectes de denrées alimentaires</h2>
-        <button>Déclarer</button>
+        <button @click="toggleNewCollectPopup()">Déclarer</button>
+        <NewCollect v-if="newCollectAsked" :ToggleNewCollectPopup="() => toggleNewCollectPopup()">
+          <h3>Déclaration d'une collecte</h3>
+        </NewCollect>
       </div>
     </div>
   </main>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'MagasinView',
+  components: {},
+  data() {
+    return {
+      newCollectAsked: false
+    }
+  },
+  methods: {
+    toggleNewCollectPopup() {
+      this.newCollectAsked = !this.newCollectAsked
+    }
+  }
+})
+</script>
