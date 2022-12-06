@@ -21,7 +21,8 @@ class Api::CollectsController < ApplicationController
     @collect = Collect.new(collect_params)
 
     if @collect.save
-      render json: @collect, status: :created, location: @collect
+      # render json: @collect, status: :created, location: @collect
+      render json: @collect.id
     else
       render json: @collect.errors, status: :unprocessable_entity
     end
