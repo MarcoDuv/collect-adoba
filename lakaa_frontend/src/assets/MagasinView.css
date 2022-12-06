@@ -1,0 +1,31 @@
+.flex-col h1{
+    color:#1A3E38;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.img-food{
+    height: 300px;
+    border-radius: 8px;
+}
+
+.description{
+    padding: 20px;
+    margin-left:50px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    display: flex;
+    -ms-flex-item-align:start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description h2{
+    color: #1A3E38;
+    font-size: x-large;
+}
+
+button{
+    width: fit-content;
+}

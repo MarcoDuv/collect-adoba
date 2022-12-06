@@ -5,7 +5,10 @@ class Api::CollectsController < ApplicationController
   def index
     @collects = Collect.all
 
-    render json: @collects
+    render json: {
+      data: ActiveModelSerializers::SerializableResource.new(@collects, each_serializer: CollectSerializer),
+      message: ['Collects list fetched successfully']
+    }
   end
 
   # GET /collects/1
