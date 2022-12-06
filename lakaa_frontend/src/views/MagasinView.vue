@@ -10,9 +10,6 @@ import "../assets/MagasinView.css"
       <div class="description">
         <h2>Collectes de denrées alimentaires</h2>
         <button>Déclarer</button>
-        <NewCollect>
-          <h2>MyPopup</h2>
-        </NewCollect>
       </div>
     </div>
   </main>
