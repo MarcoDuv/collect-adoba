@@ -28,6 +28,18 @@
 
 button{
     width: fit-content;
+    background-color: #1A3E38;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #53ab9c;
+    color:#ffffff;
 }
 
 h3{
