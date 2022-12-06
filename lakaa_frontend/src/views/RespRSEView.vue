@@ -12,12 +12,18 @@ import '../assets/RespRSEView.css'
             <th>ID</th>
             <th>Date</th>
             <th>Association</th>
+            <th>Poids</th>
+            <th>Nombre de Personnes</th>
           </tr>
+          <tbody>
           <tr v-for="collect in collects">
             <td>{{ collect.id }}</td>
             <td>{{ collect.date }}</td>
             <td>{{ collect.asso.toUpperCase() }}</td>
+            <td>{{ collect.weight }}</td>
+            <td>{{ collect.nb_ppl }}</td>
           </tr>
+        </tbody>
         </table>
       </div>
     </div>

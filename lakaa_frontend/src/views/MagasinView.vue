@@ -9,7 +9,9 @@ import "../assets/MagasinView.css"
       <img class="img-food" src="../assets/images/foodPackage.jpg">
       <div class="description">
         <h2>Collectes de denrées alimentaires</h2>
-        <button @click="toggleNewCollectPopup()">Déclarer</button>
+        <p>Les collectes de denrées alimentaires organisées en parteneriat avec des associations locales permettent de
+          vous engager et d'engager concrètement vos clients dans une action solidaire</p>
+        <button @click="toggleNewCollectPopup()"> + Déclarer</button>
         <NewCollect v-if="newCollectAsked" :ToggleNewCollectPopup="() => toggleNewCollectPopup()">
           <h3>Déclaration d'une collecte</h3>
         </NewCollect>

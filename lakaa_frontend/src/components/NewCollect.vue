@@ -9,10 +9,10 @@ import "../assets/NewCollect.css"
         <slot />
         <div class="form-container">
           <div class="input-labels">
-            <p>Nom de l'association:</p>
-            <p>Date de la collecte:</p>
-            <p>Poids de la collecte:</p>
-            <p>Nombre de personnes impliquées:</p>
+            <ul>Nom de l'association:</ul>
+            <ul>Date de la collecte:</ul>
+            <ul>Poids de la collecte:</ul>
+            <ul>Nombre de personnes impliquées:</ul>
           </div>
           <div class="input-boxes">
             <input v-model="newCollect.asso" placeholder="Association" />
@@ -21,7 +21,9 @@ import "../assets/NewCollect.css"
             <input v-model="newCollect.nb_ppl" placeholder="Nombre de Personnes" />
           </div>
         </div>
-        <p class="error-msg" v-if="errorMessage != ''">{{ errorMessage }}</p>
+        <div class="error-msg-container">
+            <h5 class="error-msg" v-if="errorMessage != ''">{{ errorMessage }}</h5>
+        </div>
         <div class="row-flex">
           <button @click="ToggleNewCollectPopup()" class="popup-close">Fermer</button>
           <button @click="CreateCollect()" class="save-button">Enregistrer</button>

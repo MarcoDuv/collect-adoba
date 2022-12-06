@@ -45,12 +45,18 @@
     align-items: left;
 }
 
+.error-msg-container{
+    margin-top: 10px;
+    min-height: 20px;
+}
+
 .error-msg{
     color: rgb(185, 81, 81);
     text-align: center;
 }
 
 .row-flex{
+    margin-top: 20px;
     display: flex;
     gap: 20px;
 }
